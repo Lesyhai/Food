@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng Nhập</title>
+    <link rel="icon" href="src/image/tealogo.png">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="src/css/signin.css" />
+</head>
+<body>
+    <a href="index.html"><img src="src/image/tealogo.png" alt=""></a>
+<div class="container" id="container">
+  <div class="form-container sign-up-container">
+    <form action="#">
+      <h1>Đăng Kí Tài Khoản</h1>
+      <div class="social-container">
+        <a href="#" class="social"><i class="bx bxl-facebook"></i></a>
+        <a href="#" class="social"><i class="bx bxl-google-plus"></i></a>
+        <a href="#" class="social"><i class="bx bxl-linkedin"></i></a>
+      </div>
+      <span>hoặc sử dụng email của bạn để đăng ký</span>
+      <input type="text" placeholder="Name" />
+      <input type="email" placeholder="Email" />
+      <input type="password" placeholder="Password" />
+      <button>Đăng Kí</button>
+    </form>
+  </div>
+  <div class="form-container sign-in-container">
+    <form action="#">
+      <h1>Đăng nhập</h1>
+      <div class="social-container">
+        <a href="#" class="social"><i class='bx bxl-facebook' ></i></a>
+        <a href="#" class="social"><i class="bx bxl-google-plus"></i></a>
+        <a href="#" class="social"><i class="bx bxl-linkedin"></i></a>
+      </div>
+      <span>hoặc sử dụng tài khoản của bạn</span>
+      <input type="email" placeholder="Email" />
+      <input type="password" placeholder="Password" />
+      <a href="#">Quên mật khẩu?</a>
+      <button>Đăng nhập</button>
+    </form>
+  </div>
+  <div class="overlay-container">
+    <div class="overlay">
+      <div class="overlay-panel overlay-left">
+        <h1>Chào mừng bạn quay trở lại!</h1>
+        <p>Để giữ kết nối với chúng tôi, vui lòng đăng nhập bằng thông tin cá nhân của bạn nếu bạn chưa có tài khoản bạn có thể đăng kí ngay bên cạnh</p>
+        <button class="ghost" id="signIn">Chuyển sang đăng nhập</button>
+      </div>
+      <div class="overlay-panel overlay-right">
+        <h1>Chào Bạn</h1>
+        <p>Nhập thông tin cá nhân của bạn và bắt đầu xem qua sản phẩm của chúng tôi</p>
+        <button class="ghost" id="signUp">Chuyển sang đăng kí</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="src/js/signin.js"></script>
+</body>
+</html>

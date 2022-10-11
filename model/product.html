@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sản Phẩm</title>
+    <link rel="icon" href="src/image/tealogo.png" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="css/bootstrap.min.css"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/owl.carousel.js"></script>
+
+    <link rel="stylesheet" href="src/css/product.css" />
+  </head>
+  <body>
+    <!-- top bar  -->
+    <nav class="top_bar navbar navbar-expand-lg bg-light">
+      <div class="content_top_bar container-fluid">
+        <div class="logo_mid">
+          <a class="img" href="#"><img src="src/image/tealogo.png" alt="" /></a>
+        </div>
+        <div class="menu_top_bar">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="icon_top_bar"><i class="bx bx-user"></i></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="icon">
+              <i class="bx bxl-facebook"></i>
+              <i class="bx bxl-twitter"></i>
+              <i class="bx bxl-instagram"></i>
+              <i class="bx bxl-google-plus"></i>
+            </div>
+            <ul class="navbar-nav me-3 mb-1">
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="signin.html"
+                  >Đăng Nhập</a
+                >
+              </li>
+              <button type="button" class="btn_cart btn btn-outline-success">
+                <a href="cart.html" class="d-flex align-items-center">
+                  <span>Giỏ Hàng</span><i class="bx bx-cart-alt"></i>
+                </a>
+              </button>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- end top bar  -->
+
+    <!-- menu  -->
+
+    <nav class="navbar navbar-expand-lg bg-success fixed">
+      <div class="content_0"></div>
+      <div class="container-fluid">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a
+                class="nav-link active text-white"
+                aria-current="page"
+                href="index.html"
+                >Trang Chủ</a
+              >
+            </li>
+            <li>
+              <a class="nav-link active text-white" href="#">Giới Thiệu</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle text-white"
+                href="product.html"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Sản Phẩm
+              </a>
+              <ul class="dropdown-menu bg-success">
+                <li>
+                  <a class="dropdown-item text-white" href="product.html"
+                    >Tất Cả Sản Phẩm</a
+                  >
+                </li>
+                <li><a class="dropdown-item text-white" href="#">Trà </a></li>
+                <li>
+                  <a class="dropdown-item text-white" href="#">Ấm Trà</a>
+                </li>
+                <li>
+                  <a class="dropdown-item text-white" href="#">Hũ Đựng Trà</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#">Liên Hệ</a>
+            </li>
+          </ul>
+        </div>
+        <form class="d-flex" role="search">
+          <input
+            class="form-control me-2"
+            type="search"
+            placeholder="Search"
+            aria-label="Search"
+            required
+          />
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </nav>
+
+    <!-- end menu  -->
+
+    <!-- banner silder  -->
+    <div
+      id="carouselExampleControls"
+      class="carousel slide"
+      data-bs-ride="carousel"
+    >
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img
+            src="src/image/slideshow_1.jpg"
+            class="d-block w-100"
+            alt="..."
+          />
+        </div>
+        <div class="carousel-item">
+          <img
+            src="src/image/slideshow_2.jpg"
+            class="d-block w-100"
+            alt="..."
+          />
+        </div>
+        <div class="carousel-item">
+          <img
+            src="src/image/slideshow_3.jpg"
+            class="d-block w-100"
+            alt="..."
+          />
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleControls"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleControls"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <!-- end banner slider  -->
+
+    <!-- product content -->
+
+    <!-- <section class="section-products">
+		<div class="container">
+				<div class="row justify-content-center text-center">
+						<div class="col-md-8 col-lg-6">
+								<div class="header">
+										<h2>Sản Phẩm Phổ Biến</h2>
+								</div>
+						</div>
+				</div>
+				<div class="row">
+						<div class="col-md-6 col-lg-4 col-xl-3">
+								<div id="product-1" class="single-product">
+										<div class="part-1">
+												<ul>
+														<li><a href="product_details.html"><i class="bx bx-cart"></i></a></li>
+														<li><a href="#"><i class="bx bx-heart"></i></a></li>
+														<li><a href="#"><i class="bx bx-plus"></i></a></li>
+														<li><a href="#"><i class="bx bx-expand"></i></a></li>
+												</ul>
+										</div>
+										<div class="part-2">
+												<h3 class="product-title">Trà Ướp Hoa Nhài</h3>
+												<h4 class="product-old-price">359.000₫</h4>
+												<h4 class="product-price">319.000₫</h4>
+										</div>
+								</div>
+						</div>
+						
+						<div class="col-md-6 col-lg-4 col-xl-3">
+								<div id="product-2" class="single-product">
+										<div class="part-1">
+												<span class="discount">15% off</span>
+												<ul>
+														<li><a href="product_details.html"><i class="bx bx-cart"></i></a></li>
+														<li><a href="#"><i class="bx bx-heart"></i></a></li>
+														<li><a href="#"><i class="bx bx-plus"></i></a></li>
+														<li><a href="#"><i class="bx bx-expand"></i></a></li>
+												</ul>
+										</div>
+										<div class="part-2">
+												<h3 class="product-title">Trà Ướp Hoa Ngọc</h3>
+                        <h4 class="product-old-price">260.000₫</h4>
+												<h4 class="product-price">220.000₫</h4>
+										</div>
+								</div>
+						</div>
+						
+						<div class="col-md-6 col-lg-4 col-xl-3">
+								<div id="product-3" class="single-product">
+										<div class="part-1">
+												<ul>
+														<li><a href="product_details.html"><i class="bx bx-cart"></i></a></li>
+														<li><a href="#"><i class="bx bx-heart"></i></a></li>
+														<li><a href="#"><i class="bx bx-plus"></i></a></li>
+														<li><a href="#"><i class="bx bx-expand"></i></a></li>
+												</ul>
+										</div>
+										<div class="part-2">
+												<h3 class="product-title">Trà Móc Câu</h3>
+												<h4 class="product-old-price">300.000₫</h4>
+												<h4 class="product-price">250.000₫</h4>
+										</div>
+								</div>
+						</div>
+						
+						<div class="col-md-6 col-lg-4 col-xl-3">
+								<div id="product-4" class="single-product">
+										<div class="part-1">
+												<span class="new">new</span>
+												<ul>
+														<li><a href="product_details.html"><i class="bx bx-cart"></i></a></li>
+														<li><a href="#"><i class="bx bx-heart"></i></a></li>
+														<li><a href="#"><i class="bx bx-plus"></i></a></li>
+														<li><a href="#"><i class="bx bx-expand"></i></a></li>
+												</ul>
+										</div>
+										<div class="part-2">
+												<h3 class="product-title">Trà Tím</h3>
+												<h4 class="product-price">320.000₫</h4>
+										</div>
+								</div>
+						</div>
+						
+						<div class="col-md-6 col-lg-4 col-xl-3">
+								<div id="product-5" class="single-product">
+										<div class="part-1">
+												<ul>
+														<li><a href="product_details.html"><i class="bx bx-cart"></i></a></li>
+														<li><a href="#"><i class="bx bx-heart"></i></a></li>
+														<li><a href="#"><i class="bx bx-plus"></i></a></li>
+														<li><a href="#"><i class="bx bx-expand"></i></a></li>
+												</ul>
+										</div>
+										<div class="part-2">
+												<h3 class="product-title">Kyusu Teapot</h3>
+												<h4 class="product-old-price">350.000₫</h4>
+												<h4 class="product-price">300.000₫</h4>
+										</div>
+								</div>
+						</div>
+						
+						<div class="col-md-6 col-lg-4 col-xl-3">
+								<div id="product-6" class="single-product">
+										<div class="part-1">
+												<ul>
+														<li><a href="product_details.html"><i class="bx bx-cart"></i></a></li>
+														<li><a href="#"><i class="bx bx-heart"></i></a></li>
+														<li><a href="#"><i class="bx bx-plus"></i></a></li>
+														<li><a href="#"><i class="bx bx-expand"></i></a></li>
+												</ul>
+										</div>
+										<div class="part-2">
+												<h3 class="product-title">Bộ Ấm Trà Song Ẩm Men Xanh Ngọc (Blue) Kết Hợp Quai Gỗ</h3>
+												<h4 class="product-price">250.000₫</h4>
+										</div>
+								</div>
+						</div>
+						
+						<div class="col-md-6 col-lg-4 col-xl-3">
+								<div id="product-7" class="single-product">
+										<div class="part-1">
+												<ul>
+														<li><a href="product_details.html"><i class="bx bx-cart"></i></a></li>
+														<li><a href="#"><i class="bx bx-heart"></i></a></li>
+														<li><a href="#"><i class="bx bx-plus"></i></a></li>
+														<li><a href="#"><i class="bx bx-expand"></i></a></li>
+												</ul>
+										</div>
+										<div class="part-2">
+												<h3 class="product-title">Ấm Trà Hoa Sen Vẽ Tay</h3>
+												<h4 class="product-old-price">370.000₫</h4>
+												<h4 class="product-price">300.000₫</h4>
+										</div>
+								</div>
+						</div>
+						
+						<div class="col-md-6 col-lg-4 col-xl-3">
+								<div id="product-8" class="single-product">
+										<div class="part-1">
+												<span class="new">new</span>
+												<ul>
+														<li><a href="product_details.html"><i class="bx bx-cart"></i></a></li>
+														<li><a href="#"><i class="bx bx-heart"></i></a></li>
+														<li><a href="#"><i class="bx bx-plus"></i></a></li>
+														<li><a href="#"><i class="bx bx-expand"></i></a></li>
+												</ul>
+										</div>
+										<div class="part-2">
+												<h3 class="product-title">Hủ Đựng Trà Hoa Sen_Eilong</h3>
+												<h4 class="product-price">270.000₫</h4>
+										</div>
+								</div>
+						</div>
+				</div>
+		</div>
+</section>
+    </div>
+</section> -->
+
+    <div class="container">
+      <div class="row ">
+        <div class="gallery col-lg-12 col-md-12 col-sm-12 col-xs-12">
+          <h1 class="gallery-title text-success mt-5">Tất Cả Sản Phẩm</h1>
+        </div>
+
+        <div align="center">
+          <button class="btn btn-default filter-button" data-filter="all">
+            Tất cả sản phẩm
+          </button>
+          <button class="btn btn-default filter-button" data-filter="tra">
+            Trà
+          </button>
+          <button class="btn btn-default filter-button" data-filter="am">
+            Ấm Trà
+          </button>
+          <button
+            class="btn btn-default filter-button"
+            data-filter="hu"
+          >
+            Hủ Đựng Trà
+          </button>
+        </div>
+        <br />
+      </div>
+      <div class="row grid_product ">
+        <div class="card gallery_product col-12 col-md-3 filter tra" >
+          <img class="mt-2" src="src/image/sp1.jpg" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">Trà Ướp Hoa Nhài</h5>
+            <p class="card-text">
+                Giá: <span class="text-decoration-line-through text-secondary">359.000₫</span> <span>319.000₫</span>
+            </p>
+            <a href="#" class="btn btn-outline-success ">Thêm Vào giỏ hàng</a>
+             <a href="product_details.html" class="btn btn-outline-success">Chi tiết sản phẩm</a>
+          </div>
+        </div>
+ <div class="card gallery_product col-12 col-md-3 filter tra" >
+          <img class="mt-2" src="src/image/sp2.jpg" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">Trà Ướp Hoa Ngọc</h5>
+          <p class="card-text">
+                Giá: <span class="text-decoration-line-through text-secondary">140.000₫</span> <span>120.000₫</span>
+            </p>
+            <a href="#" class="btn btn-outline-success">Thêm Vào giỏ hàng</a>
+            <a href="product_details.html" class="btn btn-outline-success">Chi tiết sản phẩm</a>
+          </div>
+        </div>
+
+         <div class="card gallery_product col-12 col-md-3  filter tra" >
+          <img class="mt-2" src="src/image/sp3.jpg" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">Trà Móc câu</h5>
+          <p class="card-text">
+                Giá: <span class="text-decoration-line-through text-secondary">270.000₫</span> <span>250.000₫</span>
+            </p>
+            <a href="#" class="btn btn-outline-success">Thêm Vào giỏ hàng</a>
+            <a href="product_details.html" class="btn btn-outline-success">Chi tiết sản phẩm</a>
+          </div>
+        </div>
+
+        <div class="card gallery_product col-12 col-md-3  filter tra" >
+          <img class="mt-2" src="src/image/sp4.jpg" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">Trà Tím</h5>
+          <p class="card-text">
+                Giá: <span>230.000₫</span>
+            </p>
+            <a href="#" class="btn btn-outline-success">Thêm Vào giỏ hàng</a>
+            <a href="product_details.html" class="btn btn-outline-success">Chi tiết sản phẩm</a>
+          </div>
+        </div>
+
+         <div class="card gallery_product col-12 col-md-3 filter am" >
+          <img class="mt-2" src="src/image/sp5.jpg" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">Ấm Kyusu Teapot</h5>
+          <p class="card-text">
+                Giá: <span class="text-decoration-line-through text-secondary">290.000₫</span> <span>250.000₫</span>
+            </p>
+            <a href="#" class="btn btn-outline-success">Thêm Vào giỏ hàng</a>
+            <a href="product_details.html" class="btn btn-outline-success">Chi tiết sản phẩm</a>
+          </div>
+        </div>
+
+         <div class="card gallery_product col-12 col-md-3  filter am" >
+          <img  src="src/image/sp6.jpg" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">Bộ Ấm Trà Song Ẩm Men Xanh Ngọc</h5>
+          <p class="card-text">
+                Giá: <span>278.000₫</span>
+            </p>
+            <a href="#" class="btn btn-outline-success">Thêm Vào giỏ hàng</a>
+            <a href="product_details.html" class="btn btn-outline-success">Chi tiết sản phẩm</a>
+          </div>
+        </div>
+
+         <div class="card gallery_product col-12 col-md-3 filter am" >
+          <img class="mt-2" src="src/image/sp7.jpg" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">Ấm Trà Hoa Sen Vẽ Tay</h5>
+          <p class="card-text">
+                Giá: <span class="text-decoration-line-through text-secondary">370.000₫</span> <span>300.000₫</span>
+            </p>
+            <a href="#" class="btn btn-outline-success">Thêm Vào giỏ hàng</a>
+            <a href="product_details.html" class="btn btn-outline-success">Chi tiết sản phẩm</a>
+          </div>
+        </div>
+
+         <div class="card gallery_product col-12 col-md-3  filter hu" >
+          <img class="mt-2" src="src/image/sp8.jpg" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">Hủ Đựng Trà Hoa Sen_Eilong</h5>
+          <p class="card-text">
+                Giá: <span>270.000₫</span>
+            </p>
+            <a href="#" class="btn btn-outline-success">Thêm Vào giỏ hàng</a>
+            <a href="product_details.html" class="btn btn-outline-success">Chi tiết sản phẩm</a>
+          </div>
+        </div>
+        </div>
+      </div>
+    </div>
+    <!-- end product content  -->
+
+    <!-- foooter  -->
+
+    <footer class="text-center text-lg-start bg-light text-muted">
+      <section
+        class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom bg-success text-white"
+      >
+        <div class="me-5 d-none d-lg-block">
+          <span>Kết nối với chúng tôi trên các mạng xã hội:</span>
+        </div>
+        <div>
+          <a href="" class="me-4 text-reset">
+            <i class="bx bxl-facebook"></i>
+          </a>
+          <a href="" class="me-4 text-reset">
+            <i class="bx bxl-twitter"></i>
+          </a>
+          <a href="" class="me-4 text-reset">
+            <i class="bx bxl-google"></i>
+          </a>
+          <a href="" class="me-4 text-reset">
+            <i class="bx bxl-instagram"></i>
+          </a>
+          <a href="" class="me-4 text-reset">
+            <i class="bx bxl-linkedin"></i>
+          </a>
+          <a href="" class="me-4 text-reset">
+            <i class="bx bxl-github"></i>
+          </a>
+        </div>
+      </section>
+      <section class="">
+        <div class="container text-center text-md-start mt-5">
+          <div class="row mt-3">
+            <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+              <h6 class="text-uppercase fw-bold mb-4 text-success h3">
+                <i class="bx bxs-gem"></i>MỘC TRÀ
+              </h6>
+              <p>
+                Đã từ lâu trà không chỉ là một thứ đồ uống thông thường mà còn
+                được coi như một nét văn hóa . Trà dùng để uống và thưởng thức
+                các hương vị đặc biệt, trà dùng để làm những món quà biếu tặng
+                đầy ý nghĩa ..
+              </p>
+            </div>
+            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+              <!-- Links -->
+              <h6 class="text-uppercase fw-bold mb-4">Sản Phẩm</h6>
+              <p>
+                <a href="#!" class="text-reset text-decoration-none">Trà</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset text-decoration-none">Trà cụ</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset text-decoration-none">Trà Tím</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset text-decoration-none"
+                  >Trà Móc Câu</a
+                >
+              </p>
+            </div>
+            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+              <h6 class="text-uppercase fw-bold mb-4">Liên kết</h6>
+              <p>
+                <a href="#!" class="text-reset text-decoration-none"
+                  >Định Giá</a
+                >
+              </p>
+              <p>
+                <a href="#!" class="text-reset text-decoration-none">Cài Đặt</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset text-decoration-none"
+                  >Đơn Hàng</a
+                >
+              </p>
+              <p>
+                <a href="#!" class="text-reset text-decoration-none">Trợ Giá</a>
+              </p>
+            </div>
+            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+              <!-- Links -->
+              <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+              <p><i class="bx bxs-home me-3"></i> 322/90 Mĩ Đình 2</p>
+              <p>
+                <i class="bx bxs-envelope me-3"></i>
+                hailsph22054@fpt.edu.vn
+              </p>
+              <p><i class="bx bxs-phone me-3"></i> +84 0357.902.068</p>
+              <p><i class="bx bxs-phone me-3"></i> +84 0793.193.723</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </footer>
+
+    <!-- end foooter  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/owl.carousel.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+      crossorigin="anonymous"
+    ></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="src/js/product.js"></script>
+  </body>
+</html>
