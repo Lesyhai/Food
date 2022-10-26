@@ -26,28 +26,38 @@
 
     </style>
     <div class="container-fluid title_gray h2 text-start bg-secondary text-white">
-        Danh Sách Loại Hàng
+        Danh Sách Tài Khoản
     </div>
     <div class="content container">
         <table class="container-fluid text-center" border="1">
             <tr >
                 <th></th>
-                <th>Mã Loại</th>
-                <th>Tên Loại</th>
+                <th>Mã Tài Khoản</th>
+                <th>Tên Đăng NHập</th>
+                <th>Mật Khẩu</th>
+                <th>Email</th>
+                <th>Địa Chỉ</th>
+                <th>Số Điện Thoại</th>
+                <th>Vai Trò</th>
                 <th></th>
             </tr>
             <?php
-            foreach ($listdmds as $dm ){
-                extract($dm);
-                $suadm = "index.php?act=suadm&id=".$ma_dm;
-                $xoadm = "index.php?act=xoadm&id=".$ma_dm;
+            foreach ($listtk as $stk){
+                extract($stk);
+                $suatk = "index.php?act=suatk&id=".$id_kh;
+                $xoatk = "index.php?act=xoatk&id=".$id_kh;
                 echo  '<tr>
                 <td><input type="checkbox" /></td>
-                <td>'.$ma_dm.'</td>
-                <td>'.$ten_loai.'</td>
+                <td>'.$id_kh.'</td>
+                <td>'.$user.'</td>
+                <td>'.$mat_khau.'</td>
+                <td>'.$email.'</td>
+                <td>'.$dia_chi.'</td>
+                <td>'.$sdt.'</td>
+                <td>'.$vai_tro.'</td>
                 <td>
-                 <a href="'.$suadm.'"> <input type="button" value="Sửa" /></a>
-                     <a href="'.$xoadm.'"> <input type="button" value="Xóa" /></a>
+                 <a href="'.$suatk.'"> <input type="button" value="Sửa" /></a>
+                     <a href="'.$xoatk.'"> <input type="button" value="Xóa" /></a>
                 </td>
             </tr>';
             }
@@ -69,12 +79,6 @@
                     type="button"
                     value="Xóa Các Mục Đã Chọn"
             />
-            <a href="index.php?act=addl"
-            ><input
-                        class="btn btn-outline-success mt-3"
-                        type="button"
-                        value="Nhập thêm"
-                /></a>
         </form>
     </div>
 </div>
